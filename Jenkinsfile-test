@@ -29,6 +29,7 @@ pipeline {
         stage("test 2 - code analysis"){
             steps{
                 sh " echo stage 1"
+                sh " echo stage 2"
             }
         }
 
