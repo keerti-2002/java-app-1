@@ -1,0 +1,40 @@
+pipeline {
+    agent any
+    stages {
+        stage(" my Clean Up"){
+            steps {
+                deleteDir()
+            }
+        }
+        
+        stage("code checkout"){
+            steps{
+                sh " echo stage 1"
+            }
+        }
+
+        stage("build"){
+            steps{
+                sh " echo stage 1"
+            }
+        }
+
+        stage("test"){
+            steps{
+                sh " echo stage 1"
+            }
+        }
+
+        stage("test 2 - code analysis"){
+            steps{
+                sh " echo stage 1"
+            }
+        }
+
+        stage("running the applcation"){
+            steps{
+                sh " echo stage 1"
+            }
+        }
+    }
+}
