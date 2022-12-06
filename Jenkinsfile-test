@@ -22,11 +22,16 @@ pipeline {
         stage("test"){
             steps{
                 sh " echo stage 1"
+                sh " echo stage 1"
             }
         }
 
         stage("test 2 - code analysis"){
             steps{
+
+                sh " echo stage 1"
+
+
                 sh " echo stage 2"
             }
         }
@@ -34,6 +39,7 @@ pipeline {
         stage("running the applcation"){
             steps{
                 sh " echo stage 1"
+                sh " echo runnign new stage"
             }
         }
     }
